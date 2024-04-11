@@ -1885,7 +1885,7 @@ __export(analytics_exports, {
 var import_node8 = require("@remix-run/node"), import_tiny_invariant2 = __toESM(require("tiny-invariant"));
 
 // src/app/ui/main/project/analytics/analytics.view.jsx
-var import_recharts = require("recharts"), import_jsx_dev_runtime24 = require("react/jsx-dev-runtime"), tasks = [
+var import_react19 = require("react"), import_recharts = require("recharts"), import_jsx_dev_runtime24 = require("react/jsx-dev-runtime"), tasks = [
   { id: 1, category: "to-do" },
   { id: 2, category: "completed" },
   { id: 3, category: "to-do" },
@@ -1910,60 +1910,174 @@ var import_recharts = require("recharts"), import_jsx_dev_runtime24 = require("r
     category,
     count: taskCategories[category]
   }));
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)(
-    import_recharts.BarChart,
-    {
-      width: 500,
-      height: 300,
-      data,
-      margin: {
-        top: 5,
-        right: 30,
-        left: 20,
-        bottom: 5
-      },
-      children: [
-        /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)(import_recharts.CartesianGrid, { strokeDasharray: "3 3" }, void 0, !1, {
-          fileName: "src/app/ui/main/project/analytics/analytics.view.jsx",
-          lineNumber: 51,
-          columnNumber: 7
-        }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)(import_recharts.XAxis, { dataKey: "category" }, void 0, !1, {
-          fileName: "src/app/ui/main/project/analytics/analytics.view.jsx",
-          lineNumber: 52,
-          columnNumber: 7
-        }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)(import_recharts.YAxis, {}, void 0, !1, {
-          fileName: "src/app/ui/main/project/analytics/analytics.view.jsx",
-          lineNumber: 53,
-          columnNumber: 7
-        }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)(import_recharts.Tooltip, {}, void 0, !1, {
-          fileName: "src/app/ui/main/project/analytics/analytics.view.jsx",
-          lineNumber: 54,
-          columnNumber: 7
-        }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)(import_recharts.Legend, {}, void 0, !1, {
-          fileName: "src/app/ui/main/project/analytics/analytics.view.jsx",
-          lineNumber: 55,
-          columnNumber: 7
-        }, this),
-        /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)(import_recharts.Bar, { dataKey: "count", fill: "#8884d8" }, void 0, !1, {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)("div", { className: "flex flex-wrap", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)("div", { className: "w-full p-4 sm:w-1/2", children: /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)("div", { className: "flex justify-between", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)("div", { className: "w-1/2", children: /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)(
+        import_recharts.BarChart,
+        {
+          width: 200,
+          height: 250,
+          data,
+          margin: {
+            top: 5,
+            right: 30,
+            left: 20,
+            bottom: 5
+          },
+          children: [
+            /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)(import_recharts.CartesianGrid, { strokeDasharray: "3 3" }, void 0, !1, {
+              fileName: "src/app/ui/main/project/analytics/analytics.view.jsx",
+              lineNumber: 67,
+              columnNumber: 15
+            }, this),
+            /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)(import_recharts.XAxis, { dataKey: "category" }, void 0, !1, {
+              fileName: "src/app/ui/main/project/analytics/analytics.view.jsx",
+              lineNumber: 68,
+              columnNumber: 15
+            }, this),
+            /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)(import_recharts.YAxis, {}, void 0, !1, {
+              fileName: "src/app/ui/main/project/analytics/analytics.view.jsx",
+              lineNumber: 69,
+              columnNumber: 15
+            }, this),
+            /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)(import_recharts.Tooltip, {}, void 0, !1, {
+              fileName: "src/app/ui/main/project/analytics/analytics.view.jsx",
+              lineNumber: 70,
+              columnNumber: 15
+            }, this),
+            /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)(import_recharts.Legend, {}, void 0, !1, {
+              fileName: "src/app/ui/main/project/analytics/analytics.view.jsx",
+              lineNumber: 71,
+              columnNumber: 15
+            }, this),
+            /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)(import_recharts.Bar, { dataKey: "count", fill: "#8884d8" }, void 0, !1, {
+              fileName: "src/app/ui/main/project/analytics/analytics.view.jsx",
+              lineNumber: 72,
+              columnNumber: 15
+            }, this)
+          ]
+        },
+        void 0,
+        !0,
+        {
           fileName: "src/app/ui/main/project/analytics/analytics.view.jsx",
           lineNumber: 56,
-          columnNumber: 7
+          columnNumber: 13
+        },
+        this
+      ) }, void 0, !1, {
+        fileName: "src/app/ui/main/project/analytics/analytics.view.jsx",
+        lineNumber: 55,
+        columnNumber: 11
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)("div", { className: "w-1/2", children: /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)(import_recharts.PieChart, { width: 200, height: 250, children: [
+        /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)(
+          import_recharts.Pie,
+          {
+            data,
+            dataKey: "count",
+            nameKey: "category",
+            cx: "50%",
+            cy: "50%",
+            outerRadius: 70,
+            fill: "#8884d8",
+            label: !0
+          },
+          void 0,
+          !1,
+          {
+            fileName: "src/app/ui/main/project/analytics/analytics.view.jsx",
+            lineNumber: 79,
+            columnNumber: 15
+          },
+          this
+        ),
+        /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)(import_recharts.Tooltip, {}, void 0, !1, {
+          fileName: "src/app/ui/main/project/analytics/analytics.view.jsx",
+          lineNumber: 89,
+          columnNumber: 15
         }, this)
-      ]
-    },
-    void 0,
-    !0,
-    {
+      ] }, void 0, !0, {
+        fileName: "src/app/ui/main/project/analytics/analytics.view.jsx",
+        lineNumber: 78,
+        columnNumber: 13
+      }, this) }, void 0, !1, {
+        fileName: "src/app/ui/main/project/analytics/analytics.view.jsx",
+        lineNumber: 77,
+        columnNumber: 11
+      }, this)
+    ] }, void 0, !0, {
       fileName: "src/app/ui/main/project/analytics/analytics.view.jsx",
-      lineNumber: 40,
-      columnNumber: 5
-    },
-    this
-  );
+      lineNumber: 53,
+      columnNumber: 9
+    }, this) }, void 0, !1, {
+      fileName: "src/app/ui/main/project/analytics/analytics.view.jsx",
+      lineNumber: 52,
+      columnNumber: 7
+    }, this),
+    /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)("div", { className: "w-full p-4", children: /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)(
+      import_recharts.AreaChart,
+      {
+        width: 500,
+        height: 250,
+        data,
+        margin: {
+          top: 5,
+          right: 30,
+          left: 20,
+          bottom: 5
+        },
+        children: [
+          /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)(import_recharts.CartesianGrid, { strokeDasharray: "3 3" }, void 0, !1, {
+            fileName: "src/app/ui/main/project/analytics/analytics.view.jsx",
+            lineNumber: 108,
+            columnNumber: 11
+          }, this),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)(import_recharts.XAxis, { dataKey: "category" }, void 0, !1, {
+            fileName: "src/app/ui/main/project/analytics/analytics.view.jsx",
+            lineNumber: 109,
+            columnNumber: 11
+          }, this),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)(import_recharts.YAxis, {}, void 0, !1, {
+            fileName: "src/app/ui/main/project/analytics/analytics.view.jsx",
+            lineNumber: 110,
+            columnNumber: 11
+          }, this),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)(import_recharts.Tooltip, {}, void 0, !1, {
+            fileName: "src/app/ui/main/project/analytics/analytics.view.jsx",
+            lineNumber: 111,
+            columnNumber: 11
+          }, this),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)(import_recharts.Legend, {}, void 0, !1, {
+            fileName: "src/app/ui/main/project/analytics/analytics.view.jsx",
+            lineNumber: 112,
+            columnNumber: 11
+          }, this),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime24.jsxDEV)(import_recharts.Area, { type: "monotone", dataKey: "count", fill: "#8884d8" }, void 0, !1, {
+            fileName: "src/app/ui/main/project/analytics/analytics.view.jsx",
+            lineNumber: 113,
+            columnNumber: 11
+          }, this)
+        ]
+      },
+      void 0,
+      !0,
+      {
+        fileName: "src/app/ui/main/project/analytics/analytics.view.jsx",
+        lineNumber: 97,
+        columnNumber: 9
+      },
+      this
+    ) }, void 0, !1, {
+      fileName: "src/app/ui/main/project/analytics/analytics.view.jsx",
+      lineNumber: 96,
+      columnNumber: 7
+    }, this)
+  ] }, void 0, !0, {
+    fileName: "src/app/ui/main/project/analytics/analytics.view.jsx",
+    lineNumber: 50,
+    columnNumber: 5
+  }, this);
 }, analytics_view_default = AnalyticsSection;
 
 // src/app/routes/__main/projects.$projectId/analytics.tsx
@@ -2038,7 +2152,7 @@ __export(board_exports, {
   loader: () => loader8,
   meta: () => meta5
 });
-var import_node9 = require("@remix-run/node"), import_react44 = require("@remix-run/react"), import_tiny_invariant3 = __toESM(require("tiny-invariant"));
+var import_node9 = require("@remix-run/node"), import_react45 = require("@remix-run/react"), import_tiny_invariant3 = __toESM(require("tiny-invariant"));
 
 // src/domain/filter/filter.ts
 var sorts = ["date", "priority"], DEFAULT_SORT = "date", sortDict = {
@@ -2159,10 +2273,10 @@ var getIssue = async (issueId) => {
 };
 
 // src/app/ui/main/project/board/board.view.tsx
-var import_react42 = require("react"), import_react43 = require("@remix-run/react"), import_remix_utils = require("remix-utils");
+var import_react43 = require("react"), import_react44 = require("@remix-run/react"), import_remix_utils = require("remix-utils");
 
 // node_modules/react-dnd/dist/core/DndContext.js
-var import_react19 = require("react"), DndContext = (0, import_react19.createContext)({
+var import_react20 = require("react"), DndContext = (0, import_react20.createContext)({
   dragDropManager: void 0
 });
 
@@ -3120,7 +3234,7 @@ function makeStoreInstance(debugMode) {
 }
 
 // node_modules/react-dnd/dist/core/DndProvider.js
-var import_react20 = require("react");
+var import_react21 = require("react");
 function _objectWithoutProperties(source, excluded) {
   if (source == null)
     return {};
@@ -3140,12 +3254,12 @@ function _objectWithoutPropertiesLoose(source, excluded) {
     key = sourceKeys[i], !(excluded.indexOf(key) >= 0) && (target[key] = source[key]);
   return target;
 }
-var refCount = 0, INSTANCE_SYM = Symbol.for("__REACT_DND_CONTEXT_INSTANCE__"), DndProvider = /* @__PURE__ */ (0, import_react20.memo)(function(_param) {
+var refCount = 0, INSTANCE_SYM = Symbol.for("__REACT_DND_CONTEXT_INSTANCE__"), DndProvider = /* @__PURE__ */ (0, import_react21.memo)(function(_param) {
   var { children } = _param, props = _objectWithoutProperties(_param, [
     "children"
   ]);
   let [manager, isGlobalInstance] = getDndContextValue(props);
-  return (0, import_react20.useEffect)(() => {
+  return (0, import_react21.useEffect)(() => {
     if (isGlobalInstance) {
       let context = getGlobalContext();
       return ++refCount, () => {
@@ -3182,16 +3296,16 @@ function getGlobalContext() {
 }
 
 // node_modules/react-dnd/dist/hooks/useCollector.js
-var import_fast_deep_equal = __toESM(require("fast-deep-equal"), 1), import_react22 = require("react");
+var import_fast_deep_equal = __toESM(require("fast-deep-equal"), 1), import_react23 = require("react");
 
 // node_modules/react-dnd/dist/hooks/useIsomorphicLayoutEffect.js
-var import_react21 = require("react"), useIsomorphicLayoutEffect = typeof window < "u" ? import_react21.useLayoutEffect : import_react21.useEffect;
+var import_react22 = require("react"), useIsomorphicLayoutEffect = typeof window < "u" ? import_react22.useLayoutEffect : import_react22.useEffect;
 
 // node_modules/react-dnd/dist/hooks/useCollector.js
 function useCollector(monitor, collect, onUpdate) {
-  let [collected, setCollected] = (0, import_react22.useState)(
+  let [collected, setCollected] = (0, import_react23.useState)(
     () => collect(monitor)
-  ), updateCollected = (0, import_react22.useCallback)(() => {
+  ), updateCollected = (0, import_react23.useCallback)(() => {
     let nextValue = collect(monitor);
     (0, import_fast_deep_equal.default)(collected, nextValue) || (setCollected(nextValue), onUpdate && onUpdate());
   }, [
@@ -3232,18 +3346,18 @@ function useCollectedProps(collector, monitor, connector) {
 }
 
 // node_modules/react-dnd/dist/hooks/useOptionalFactory.js
-var import_react23 = require("react");
+var import_react24 = require("react");
 function useOptionalFactory(arg, deps) {
   let memoDeps = [
     ...deps || []
   ];
-  return deps == null && typeof arg != "function" && memoDeps.push(arg), (0, import_react23.useMemo)(() => typeof arg == "function" ? arg() : arg, memoDeps);
+  return deps == null && typeof arg != "function" && memoDeps.push(arg), (0, import_react24.useMemo)(() => typeof arg == "function" ? arg() : arg, memoDeps);
 }
 
 // node_modules/react-dnd/dist/hooks/useDrag/connectors.js
-var import_react24 = require("react");
+var import_react25 = require("react");
 function useConnectDragSource(connector) {
-  return (0, import_react24.useMemo)(
+  return (0, import_react25.useMemo)(
     () => connector.hooks.dragSource(),
     [
       connector
@@ -3251,7 +3365,7 @@ function useConnectDragSource(connector) {
   );
 }
 function useConnectDragPreview(connector) {
-  return (0, import_react24.useMemo)(
+  return (0, import_react25.useMemo)(
     () => connector.hooks.dragPreview(),
     [
       connector
@@ -3260,7 +3374,7 @@ function useConnectDragPreview(connector) {
 }
 
 // node_modules/react-dnd/dist/hooks/useDrag/useDragSourceConnector.js
-var import_react27 = require("react");
+var import_react28 = require("react");
 
 // node_modules/react-dnd/dist/internals/DragSourceMonitorImpl.js
 var isCallingCanDrag = !1, isCallingIsDragging = !1, DragSourceMonitorImpl = class {
@@ -3452,7 +3566,7 @@ function isRef(obj) {
 }
 
 // node_modules/react-dnd/dist/internals/wrapConnectorHooks.js
-var import_react25 = require("react");
+var import_react26 = require("react");
 function throwIfCompositeComponentElement(element) {
   if (typeof element.type == "string")
     return;
@@ -3461,7 +3575,7 @@ function throwIfCompositeComponentElement(element) {
 }
 function wrapHookToRecognizeElement(hook) {
   return (elementOrNode = null, options = null) => {
-    if (!(0, import_react25.isValidElement)(elementOrNode)) {
+    if (!(0, import_react26.isValidElement)(elementOrNode)) {
       let node = elementOrNode;
       return hook(node, options), node;
     }
@@ -3486,11 +3600,11 @@ function setRef(ref, node) {
 }
 function cloneWithRef(element, newRef) {
   let previousRef = element.ref;
-  return invariant3(typeof previousRef != "string", "Cannot connect React DnD to an element with an existing string ref. Please convert it to use a callback ref instead, or wrap it into a <span> or <div>. Read more: https://reactjs.org/docs/refs-and-the-dom.html#callback-refs"), previousRef ? (0, import_react25.cloneElement)(element, {
+  return invariant3(typeof previousRef != "string", "Cannot connect React DnD to an element with an existing string ref. Please convert it to use a callback ref instead, or wrap it into a <span> or <div>. Read more: https://reactjs.org/docs/refs-and-the-dom.html#callback-refs"), previousRef ? (0, import_react26.cloneElement)(element, {
     ref: (node) => {
       setRef(previousRef, node), setRef(newRef, node);
     }
-  }) : (0, import_react25.cloneElement)(element, {
+  }) : (0, import_react26.cloneElement)(element, {
     ref: newRef
   });
 }
@@ -3632,15 +3746,15 @@ var TargetConnector = class {
 };
 
 // node_modules/react-dnd/dist/hooks/useDragDropManager.js
-var import_react26 = require("react");
+var import_react27 = require("react");
 function useDragDropManager() {
-  let { dragDropManager } = (0, import_react26.useContext)(DndContext);
+  let { dragDropManager } = (0, import_react27.useContext)(DndContext);
   return invariant3(dragDropManager != null, "Expected drag drop context"), dragDropManager;
 }
 
 // node_modules/react-dnd/dist/hooks/useDrag/useDragSourceConnector.js
 function useDragSourceConnector(dragSourceOptions, dragPreviewOptions) {
-  let manager = useDragDropManager(), connector = (0, import_react27.useMemo)(
+  let manager = useDragDropManager(), connector = (0, import_react28.useMemo)(
     () => new SourceConnector(manager.getBackend()),
     [
       manager
@@ -3656,10 +3770,10 @@ function useDragSourceConnector(dragSourceOptions, dragPreviewOptions) {
 }
 
 // node_modules/react-dnd/dist/hooks/useDrag/useDragSourceMonitor.js
-var import_react28 = require("react");
+var import_react29 = require("react");
 function useDragSourceMonitor() {
   let manager = useDragDropManager();
-  return (0, import_react28.useMemo)(
+  return (0, import_react29.useMemo)(
     () => new DragSourceMonitorImpl(manager),
     [
       manager
@@ -3668,7 +3782,7 @@ function useDragSourceMonitor() {
 }
 
 // node_modules/react-dnd/dist/hooks/useDrag/useDragSource.js
-var import_react29 = require("react");
+var import_react30 = require("react");
 
 // node_modules/react-dnd/dist/hooks/useDrag/DragSourceImpl.js
 var DragSourceImpl = class {
@@ -3695,14 +3809,14 @@ var DragSourceImpl = class {
 
 // node_modules/react-dnd/dist/hooks/useDrag/useDragSource.js
 function useDragSource(spec, monitor, connector) {
-  let handler = (0, import_react29.useMemo)(
+  let handler = (0, import_react30.useMemo)(
     () => new DragSourceImpl(spec, monitor, connector),
     [
       monitor,
       connector
     ]
   );
-  return (0, import_react29.useEffect)(() => {
+  return (0, import_react30.useEffect)(() => {
     handler.spec = spec;
   }, [
     spec
@@ -3710,9 +3824,9 @@ function useDragSource(spec, monitor, connector) {
 }
 
 // node_modules/react-dnd/dist/hooks/useDrag/useDragType.js
-var import_react30 = require("react");
+var import_react31 = require("react");
 function useDragType(spec) {
-  return (0, import_react30.useMemo)(() => {
+  return (0, import_react31.useMemo)(() => {
     let result = spec.type;
     return invariant3(result != null, "spec.type must be defined"), result;
   }, [
@@ -3750,9 +3864,9 @@ function useDrag(specArg, deps) {
 }
 
 // node_modules/react-dnd/dist/hooks/useDrop/connectors.js
-var import_react31 = require("react");
+var import_react32 = require("react");
 function useConnectDropTarget(connector) {
-  return (0, import_react31.useMemo)(
+  return (0, import_react32.useMemo)(
     () => connector.hooks.dropTarget(),
     [
       connector
@@ -3761,9 +3875,9 @@ function useConnectDropTarget(connector) {
 }
 
 // node_modules/react-dnd/dist/hooks/useDrop/useDropTargetConnector.js
-var import_react32 = require("react");
+var import_react33 = require("react");
 function useDropTargetConnector(options) {
-  let manager = useDragDropManager(), connector = (0, import_react32.useMemo)(
+  let manager = useDragDropManager(), connector = (0, import_react33.useMemo)(
     () => new TargetConnector(manager.getBackend()),
     [
       manager
@@ -3775,10 +3889,10 @@ function useDropTargetConnector(options) {
 }
 
 // node_modules/react-dnd/dist/hooks/useDrop/useDropTargetMonitor.js
-var import_react33 = require("react");
+var import_react34 = require("react");
 function useDropTargetMonitor() {
   let manager = useDragDropManager();
-  return (0, import_react33.useMemo)(
+  return (0, import_react34.useMemo)(
     () => new DropTargetMonitorImpl(manager),
     [
       manager
@@ -3787,10 +3901,10 @@ function useDropTargetMonitor() {
 }
 
 // node_modules/react-dnd/dist/hooks/useDrop/useAccept.js
-var import_react34 = require("react");
+var import_react35 = require("react");
 function useAccept(spec) {
   let { accept } = spec;
-  return (0, import_react34.useMemo)(() => (invariant3(spec.accept != null, "accept must be defined"), Array.isArray(accept) ? accept : [
+  return (0, import_react35.useMemo)(() => (invariant3(spec.accept != null, "accept must be defined"), Array.isArray(accept) ? accept : [
     accept
   ]), [
     accept
@@ -3798,7 +3912,7 @@ function useAccept(spec) {
 }
 
 // node_modules/react-dnd/dist/hooks/useDrop/useDropTarget.js
-var import_react35 = require("react");
+var import_react36 = require("react");
 
 // node_modules/react-dnd/dist/hooks/useDrop/DropTargetImpl.js
 var DropTargetImpl = class {
@@ -3822,13 +3936,13 @@ var DropTargetImpl = class {
 
 // node_modules/react-dnd/dist/hooks/useDrop/useDropTarget.js
 function useDropTarget(spec, monitor) {
-  let dropTarget = (0, import_react35.useMemo)(
+  let dropTarget = (0, import_react36.useMemo)(
     () => new DropTargetImpl(spec, monitor),
     [
       monitor
     ]
   );
-  return (0, import_react35.useEffect)(() => {
+  return (0, import_react36.useEffect)(() => {
     dropTarget.spec = spec;
   }, [
     spec
@@ -4733,18 +4847,18 @@ var import_jsx_dev_runtime29 = require("react/jsx-dev-runtime"), AVATAR_SIZE = 4
 }, this);
 
 // src/app/ui/main/project/board/select-sort.tsx
-var import_react37 = require("@remix-run/react"), Select = __toESM(require("@radix-ui/react-select")), import_fa2 = require("react-icons/fa"), import_hi3 = require("react-icons/hi"), import_bs2 = require("react-icons/bs");
+var import_react38 = require("@remix-run/react"), Select = __toESM(require("@radix-ui/react-select")), import_fa2 = require("react-icons/fa"), import_hi3 = require("react-icons/hi"), import_bs2 = require("react-icons/bs");
 
 // src/app/hooks/useSortBy.tsx
-var import_react36 = require("@remix-run/react");
+var import_react37 = require("@remix-run/react");
 var useSortBy = () => {
-  let [searchParams] = (0, import_react36.useSearchParams)(), sortByParam = searchParams.get("sortBy");
+  let [searchParams] = (0, import_react37.useSearchParams)(), sortByParam = searchParams.get("sortBy");
   return isValidSort(sortByParam) ? sortByParam : null;
 };
 
 // src/app/ui/main/project/board/select-sort.tsx
 var import_jsx_dev_runtime30 = require("react/jsx-dev-runtime"), SelectSort = () => {
-  let submit = (0, import_react37.useSubmit)(), sortBy = useSortBy() || DEFAULT_SORT, SortIcon = ({ sort }) => (
+  let submit = (0, import_react38.useSubmit)(), sortBy = useSortBy() || DEFAULT_SORT, SortIcon = ({ sort }) => (
     // prettier-ignore
     sort === "priority" ? /* @__PURE__ */ (0, import_jsx_dev_runtime30.jsxDEV)(import_hi3.HiFlag, { size: 16 }, void 0, !1, {
       fileName: "src/app/ui/main/project/board/select-sort.tsx",
@@ -4756,7 +4870,7 @@ var import_jsx_dev_runtime30 = require("react/jsx-dev-runtime"), SelectSort = ()
       columnNumber: 9
     }, this)
   );
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime30.jsxDEV)(import_react37.Form, { method: "get", children: /* @__PURE__ */ (0, import_jsx_dev_runtime30.jsxDEV)(Select.Root, { defaultValue: sortBy, onValueChange: (value) => {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime30.jsxDEV)(import_react38.Form, { method: "get", children: /* @__PURE__ */ (0, import_jsx_dev_runtime30.jsxDEV)(Select.Root, { defaultValue: sortBy, onValueChange: (value) => {
     submit({ sortBy: value });
   }, children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime30.jsxDEV)(
@@ -4852,10 +4966,10 @@ var import_jsx_dev_runtime30 = require("react/jsx-dev-runtime"), SelectSort = ()
 };
 
 // src/app/ui/main/project/board/category-column/category-column.tsx
-var import_react40 = require("react"), import_react41 = require("@remix-run/react"), import_ai2 = require("react-icons/ai"), import_rx = require("react-icons/rx"), import_classix13 = __toESM(require("classix"));
+var import_react41 = require("react"), import_react42 = require("@remix-run/react"), import_ai2 = require("react-icons/ai"), import_rx = require("react-icons/rx"), import_classix13 = __toESM(require("classix"));
 
 // src/app/ui/main/project/board/category-column/issue-card/issue-card.tsx
-var import_react38 = require("react"), import_react39 = require("@remix-run/react"), import_classix12 = __toESM(require("classix"));
+var import_react39 = require("react"), import_react40 = require("@remix-run/react"), import_classix12 = __toESM(require("classix"));
 
 // src/app/components/icons.tsx
 var import_fa3 = require("react-icons/fa"), import_classix10 = __toESM(require("classix")), import_jsx_dev_runtime31 = require("react/jsx-dev-runtime"), TaskIcon = ({
@@ -4931,7 +5045,7 @@ var import_jsx_dev_runtime33 = require("react/jsx-dev-runtime"), IssueCard = ({
     }),
     [issue.id]
   );
-  return (0, import_react38.useEffect)(() => {
+  return (0, import_react39.useEffect)(() => {
     handleDragging(isDragging);
   }, [isDragging, handleDragging]), /* @__PURE__ */ (0, import_jsx_dev_runtime33.jsxDEV)("div", { ref: isSubmitting ? void 0 : dragRef, children: /* @__PURE__ */ (0, import_jsx_dev_runtime33.jsxDEV)(
     IssueCardContent,
@@ -4969,7 +5083,7 @@ var import_jsx_dev_runtime33 = require("react/jsx-dev-runtime"), IssueCard = ({
       "flex w-full cursor-pointer flex-col rounded border-none bg-elevation-surface-raised p-3 text-left shadow-xs duration-200 ease-in-out hover:bg-elevation-surface-raised-hovered active:bg-elevation-surface-raised-pressed",
       isSubmitting && "opacity-50"
     ),
-    children: /* @__PURE__ */ (0, import_jsx_dev_runtime33.jsxDEV)(import_react39.Link, { to: link, children: /* @__PURE__ */ (0, import_jsx_dev_runtime33.jsxDEV)(import_jsx_dev_runtime33.Fragment, { children: [
+    children: /* @__PURE__ */ (0, import_jsx_dev_runtime33.jsxDEV)(import_react40.Link, { to: link, children: /* @__PURE__ */ (0, import_jsx_dev_runtime33.jsxDEV)(import_jsx_dev_runtime33.Fragment, { children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime33.jsxDEV)("p", { className: "line-clamp-2 min-h-[48px] w-full text-font", children: name }, void 0, !1, {
         fileName: "src/app/ui/main/project/board/category-column/issue-card/issue-card.tsx",
         lineNumber: 85,
@@ -5030,7 +5144,7 @@ var import_jsx_dev_runtime34 = require("react/jsx-dev-runtime"), CategoryColumn 
     submittingIssues,
     setSubmittingIssues,
     handleDragging
-  } = props, [columnHeight, setColumnHeight] = (0, import_react40.useState)(0), columnRef = (0, import_react40.useRef)(), fetcher = (0, import_react41.useFetcher)(), sortBy = useSortBy(), { search } = useProjectStore(), emptyCategory = category.issues.length === 0, issueLink = sortBy ? `issue/new?category=${category.type}&sortBy=${sortBy}` : `issue/new?category=${category.type}`, [{ isOver }, dropRef] = useDrop(
+  } = props, [columnHeight, setColumnHeight] = (0, import_react41.useState)(0), columnRef = (0, import_react41.useRef)(), fetcher = (0, import_react42.useFetcher)(), sortBy = useSortBy(), { search } = useProjectStore(), emptyCategory = category.issues.length === 0, issueLink = sortBy ? `issue/new?category=${category.type}&sortBy=${sortBy}` : `issue/new?category=${category.type}`, [{ isOver }, dropRef] = useDrop(
     () => ({
       accept: DRAG_ISSUE_CARD,
       drop: (item) => updateIssueOnCardDrop(item),
@@ -5051,12 +5165,12 @@ var import_jsx_dev_runtime34 = require("react/jsx-dev-runtime"), CategoryColumn 
       }
     ), submittingIssues.includes(item.issueId) || setSubmittingIssues((prev) => [...prev, item.issueId]));
   }, filteredIssues = () => category.issues.filter((issue) => issue.name.toLowerCase().includes(search));
-  return (0, import_react40.useEffect)(() => {
+  return (0, import_react41.useEffect)(() => {
     if (fetcher.data && fetcher.data.issueId) {
       let { issueId } = fetcher.data;
       setSubmittingIssues((prev) => prev.filter((id) => id !== issueId));
     }
-  }, [fetcher, setSubmittingIssues]), (0, import_react40.useEffect)(() => {
+  }, [fetcher, setSubmittingIssues]), (0, import_react41.useEffect)(() => {
     columnRef.current && setColumnHeight(columnRef.current.offsetHeight);
   }, []), /* @__PURE__ */ (0, import_jsx_dev_runtime34.jsxDEV)(
     "div",
@@ -5127,7 +5241,7 @@ var import_jsx_dev_runtime34 = require("react/jsx-dev-runtime"), CategoryColumn 
             columnNumber: 9
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime34.jsxDEV)(
-            import_react41.Link,
+            import_react42.Link,
             {
               to: issueLink,
               className: "text-font-subtlest/60 flex cursor-pointer rounded border-none p-1 hover:bg-background-neutral",
@@ -5268,7 +5382,7 @@ var import_jsx_dev_runtime35 = require("react/jsx-dev-runtime"), BoardView = ({ 
     lineNumber: 30,
     columnNumber: 9
   }, this),
-  /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)(import_react43.Outlet, {}, void 0, !1, {
+  /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)(import_react44.Outlet, {}, void 0, !1, {
     fileName: "src/app/ui/main/project/board/board.view.tsx",
     lineNumber: 33,
     columnNumber: 9
@@ -5282,23 +5396,23 @@ var import_jsx_dev_runtime35 = require("react/jsx-dev-runtime"), BoardView = ({ 
   lineNumber: 19,
   columnNumber: 5
 }, this), Categories = ({ categories }) => {
-  let [isDragging, setIsDragging] = (0, import_react42.useState)(!1), [submittingIssues, setSubmittingIssues] = (0, import_react42.useState)([]), { revalidate } = (0, import_react43.useRevalidator)(), navigate = (0, import_react43.useNavigate)();
+  let [isDragging, setIsDragging] = (0, import_react43.useState)(!1), [submittingIssues, setSubmittingIssues] = (0, import_react43.useState)([]), { revalidate } = (0, import_react44.useRevalidator)(), navigate = (0, import_react44.useNavigate)();
   (0, import_remix_utils.useEventSource)("board/issue/issue-event", {
     event: EVENTS.ISSUE_CREATED
   });
   let dataUpdated = (0, import_remix_utils.useEventSource)("board/issue/issue-event", {
     event: EVENTS.ISSUE_CHANGED
-  }), onKeyDown = (0, import_react42.useCallback)(
+  }), onKeyDown = (0, import_react43.useCallback)(
     (e) => {
       e.shiftKey && e.key.toLowerCase() === "n" && (e.preventDefault(), navigate("issue/new"));
     },
     [navigate]
   );
-  return (0, import_react42.useEffect)(() => {
+  return (0, import_react43.useEffect)(() => {
     setSubmittingIssues([]);
-  }, [categories]), (0, import_react42.useEffect)(() => {
+  }, [categories]), (0, import_react43.useEffect)(() => {
     revalidate();
-  }, [dataUpdated, revalidate]), (0, import_react42.useEffect)(() => (window.addEventListener("keydown", onKeyDown), () => window.removeEventListener("keydown", onKeyDown)), [onKeyDown]), /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("section", { className: "mt-12 flex h-full flex-col", children: [
+  }, [dataUpdated, revalidate]), (0, import_react43.useEffect)(() => (window.addEventListener("keydown", onKeyDown), () => window.removeEventListener("keydown", onKeyDown)), [onKeyDown]), /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("section", { className: "mt-12 flex h-full flex-col", children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)("span", { className: "mb-2 block justify-self-end font-primary-light text-2xs text-font-subtlest", children: [
       "Press ",
       /* @__PURE__ */ (0, import_jsx_dev_runtime35.jsxDEV)(Kbd, { children: "Shift" }, void 0, !1, {
@@ -5413,7 +5527,7 @@ function ErrorBoundary5({ error }) {
   }, this);
 }
 function BoardRoute() {
-  let { project } = (0, import_react44.useLoaderData)();
+  let { project } = (0, import_react45.useLoaderData)();
   return /* @__PURE__ */ (0, import_jsx_dev_runtime36.jsxDEV)(BoardView, { project }, void 0, !1, {
     fileName: "src/app/routes/__main/projects.$projectId/board.tsx",
     lineNumber: 130,
@@ -5451,7 +5565,7 @@ __export(issueId_exports, {
   loader: () => loader10,
   meta: () => meta6
 });
-var import_node10 = require("@remix-run/node"), import_react57 = require("@remix-run/react"), import_tiny_invariant4 = __toESM(require("tiny-invariant")), import_classix22 = __toESM(require("classix")), Dialog2 = __toESM(require("@radix-ui/react-dialog"));
+var import_node10 = require("@remix-run/node"), import_react58 = require("@remix-run/react"), import_tiny_invariant4 = __toESM(require("tiny-invariant")), import_classix22 = __toESM(require("classix")), Dialog2 = __toESM(require("@radix-ui/react-dialog"));
 
 // src/infrastructure/db/comment.ts
 var deleteComment = async (commentId) => {
@@ -5463,7 +5577,7 @@ var deleteComment = async (commentId) => {
 };
 
 // src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx
-var import_react55 = require("react"), import_react56 = require("@remix-run/react");
+var import_react56 = require("react"), import_react57 = require("@remix-run/react");
 
 // src/app/components/dialog/dialog.tsx
 var Dialog = __toESM(require("@radix-ui/react-dialog")), import_classix14 = __toESM(require("classix")), import_tailwindcss_radix_ui = require("tailwindcss-radix-ui"), Root8 = Dialog.Root;
@@ -5658,10 +5772,10 @@ var createdAt2 = (/* @__PURE__ */ new Date("2022-01-18 11:00")).valueOf(), todoI
 ].flat().map((issue) => issue.id);
 
 // src/app/components/title/title.tsx
-var import_react46 = require("react"), import_classix16 = __toESM(require("classix"));
+var import_react47 = require("react"), import_classix16 = __toESM(require("classix"));
 
 // src/app/components/textarea-autosize.tsx
-var import_react45 = require("react"), import_classix15 = __toESM(require("classix")), import_jsx_dev_runtime37 = require("react/jsx-dev-runtime"), TextareaAutosize = (props) => {
+var import_react46 = require("react"), import_classix15 = __toESM(require("classix")), import_jsx_dev_runtime37 = require("react/jsx-dev-runtime"), TextareaAutosize = (props) => {
   let {
     name,
     value,
@@ -5672,14 +5786,14 @@ var import_react45 = require("react"), import_classix15 = __toESM(require("class
     textareaClassName,
     onFocus,
     onBlur
-  } = props, [textareaHeight, setTextareaHeight] = (0, import_react45.useState)(40), textareaRef = (0, import_react45.useRef)(null), handleOnFocus = (e) => {
+  } = props, [textareaHeight, setTextareaHeight] = (0, import_react46.useState)(40), textareaRef = (0, import_react46.useRef)(null), handleOnFocus = (e) => {
     let target = e.currentTarget, length = target.value.length;
     target.setSelectionRange(length, length), onFocus && onFocus();
   }, handleTitleChange = (e) => {
     let value2 = e.currentTarget.value;
     setValue(value2);
   }, valueIsNotOnlySpaces = () => !/^( )\1*$/.test(value);
-  return (0, import_react45.useLayoutEffect)(() => {
+  return (0, import_react46.useLayoutEffect)(() => {
     textareaRef.current && setTextareaHeight(textareaRef.current.scrollHeight);
   }, [value]), /* @__PURE__ */ (0, import_jsx_dev_runtime37.jsxDEV)("div", { className: "relative", children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime37.jsxDEV)(
@@ -5745,7 +5859,7 @@ var import_jsx_dev_runtime38 = require("react/jsx-dev-runtime"), DEFAULT_MAX_LEN
   error,
   placeholder = "Write the title"
 }) => {
-  let [title, setTitle] = (0, import_react46.useState)(initTitle), [isFocus, setIsFocus] = (0, import_react46.useState)(!0), isMaxLength = title.length >= maxLength, requireError = error && (title.length === 0 || textAreOnlySpaces(title));
+  let [title, setTitle] = (0, import_react47.useState)(initTitle), [isFocus, setIsFocus] = (0, import_react47.useState)(!0), isMaxLength = title.length >= maxLength, requireError = error && (title.length === 0 || textAreOnlySpaces(title));
   return /* @__PURE__ */ (0, import_jsx_dev_runtime38.jsxDEV)("div", { className: "relative", children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime38.jsxDEV)(
       TextareaAutosize,
@@ -5811,12 +5925,12 @@ var import_jsx_dev_runtime38 = require("react/jsx-dev-runtime"), DEFAULT_MAX_LEN
 };
 
 // src/app/components/description/description.tsx
-var import_react47 = require("react");
+var import_react48 = require("react");
 var import_jsx_dev_runtime39 = require("react/jsx-dev-runtime"), Description2 = ({
   initDescription = "",
   readOnly
 }) => {
-  let [description, setDescription] = (0, import_react47.useState)(initDescription);
+  let [description, setDescription] = (0, import_react48.useState)(initDescription);
   return /* @__PURE__ */ (0, import_jsx_dev_runtime39.jsxDEV)("div", { className: "mt-1 [&_p]:font-primary-light [&_p]:leading-6 [&_textarea]:font-primary-light [&_textarea]:leading-6", children: /* @__PURE__ */ (0, import_jsx_dev_runtime39.jsxDEV)(
     TextareaAutosize,
     {
@@ -5844,7 +5958,7 @@ var import_jsx_dev_runtime39 = require("react/jsx-dev-runtime"), Description2 = 
 };
 
 // src/app/ui/main/project/board/issue-panel/panel-header-issue.tsx
-var import_react48 = require("@remix-run/react");
+var import_react49 = require("@remix-run/react");
 
 // src/app/components/alert-dialog/alert-dialog.tsx
 var AlertDialog = __toESM(require("@radix-ui/react-alert-dialog")), import_tailwindcss_radix_ui2 = require("tailwindcss-radix-ui");
@@ -5880,7 +5994,7 @@ var import_jsx_dev_runtime41 = require("react/jsx-dev-runtime"), PanelHeaderIssu
   id,
   deleteDisabled
 }) => {
-  let previousUrl = (0, import_react48.useLocation)().pathname.split("/issue")[0];
+  let previousUrl = (0, import_react49.useLocation)().pathname.split("/issue")[0];
   return /* @__PURE__ */ (0, import_jsx_dev_runtime41.jsxDEV)("div", { className: "flex", children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime41.jsxDEV)("span", { className: "flex flex-grow items-center", children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime41.jsxDEV)("span", { className: "flex items-center", children: /* @__PURE__ */ (0, import_jsx_dev_runtime41.jsxDEV)(TaskIcon, { size: 20 }, void 0, !1, {
@@ -5908,7 +6022,7 @@ var import_jsx_dev_runtime41 = require("react/jsx-dev-runtime"), PanelHeaderIssu
       columnNumber: 7
     }, this),
     /* @__PURE__ */ (0, import_jsx_dev_runtime41.jsxDEV)(
-      import_react48.Link,
+      import_react49.Link,
       {
         to: previousUrl,
         className: "ml-3 flex cursor-pointer rounded border-none p-0.5 text-icon flex-center hover:bg-background-neutral",
@@ -5978,7 +6092,7 @@ var import_jsx_dev_runtime41 = require("react/jsx-dev-runtime"), PanelHeaderIssu
         lineNumber: 64,
         columnNumber: 11
       }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime41.jsxDEV)(import_react48.Form, { method: "delete", className: "mt-8 flex w-full justify-end gap-4", children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime41.jsxDEV)(import_react49.Form, { method: "delete", className: "mt-8 flex w-full justify-end gap-4", children: [
         /* @__PURE__ */ (0, import_jsx_dev_runtime41.jsxDEV)(Cancel2, { "aria-label": "Cancel", children: "Cancel" }, void 0, !1, {
           fileName: "src/app/ui/main/project/board/issue-panel/panel-header-issue.tsx",
           lineNumber: 69,
@@ -6027,14 +6141,14 @@ var import_jsx_dev_runtime41 = require("react/jsx-dev-runtime"), PanelHeaderIssu
 var import_uuid = require("uuid");
 
 // src/app/ui/main/project/board/issue-panel/comment/edit-box.tsx
-var import_react49 = require("react"), import_classix18 = __toESM(require("classix"));
+var import_react50 = require("react"), import_classix18 = __toESM(require("classix"));
 var import_jsx_dev_runtime42 = require("react/jsx-dev-runtime"), EditBox = ({
   defaultMessage,
   autofocus,
   save,
   cancel
 }) => {
-  let [message, setMessage] = (0, import_react49.useState)(defaultMessage), [initError, setInitError] = (0, import_react49.useState)(!1), [isEditing, setIsEditing] = (0, import_react49.useState)(!1), messageIsValid = () => message.length > 0 && !textAreOnlySpaces(message), resetValues = () => {
+  let [message, setMessage] = (0, import_react50.useState)(defaultMessage), [initError, setInitError] = (0, import_react50.useState)(!1), [isEditing, setIsEditing] = (0, import_react50.useState)(!1), messageIsValid = () => message.length > 0 && !textAreOnlySpaces(message), resetValues = () => {
     setMessage(defaultMessage), setInitError(!1), setIsEditing(!1);
   }, onSave = () => {
     messageIsValid() ? (save(message), resetValues()) : setInitError(!0);
@@ -6160,7 +6274,7 @@ var import_jsx_dev_runtime43 = require("react/jsx-dev-runtime"), CreateComment =
 };
 
 // src/app/ui/main/project/board/issue-panel/comment/view-comment.tsx
-var import_react50 = require("react"), import_react51 = require("@remix-run/react"), import_classix19 = __toESM(require("classix"));
+var import_react51 = require("react"), import_react52 = require("@remix-run/react"), import_classix19 = __toESM(require("classix"));
 
 // src/utils/formatDateTime.ts
 var formatDateTime = (timestamp) => {
@@ -6180,7 +6294,7 @@ var import_jsx_dev_runtime44 = require("react/jsx-dev-runtime"), ViewComment = (
   comment,
   removeComment
 }) => {
-  let { user } = useUserStore(), [isEditing, setIsEditing] = (0, import_react50.useState)(!1), fetcher = (0, import_react51.useFetcher)(), isNotSelfComment = comment.user.id !== user.id, edit = () => setIsEditing(!0), cancel = () => setIsEditing(!1), remove = () => {
+  let { user } = useUserStore(), [isEditing, setIsEditing] = (0, import_react51.useState)(!1), fetcher = (0, import_react52.useFetcher)(), isNotSelfComment = comment.user.id !== user.id, edit = () => setIsEditing(!0), cancel = () => setIsEditing(!1), remove = () => {
     removeComment(comment.id), !comment.id.startsWith("temp-") && fetcher.submit(
       { commentId: comment.id, _action: "deleteComment" },
       { method: "delete" }
@@ -6338,7 +6452,7 @@ var import_jsx_dev_runtime44 = require("react/jsx-dev-runtime"), ViewComment = (
 };
 
 // src/app/ui/main/project/board/issue-panel/select-status.tsx
-var import_react52 = require("react"), import_classix21 = __toESM(require("classix"));
+var import_react53 = require("react"), import_classix21 = __toESM(require("classix"));
 
 // src/app/components/select/select.tsx
 var Select2 = __toESM(require("@radix-ui/react-select")), import_tailwindcss_radix_ui3 = require("tailwindcss-radix-ui"), import_classix20 = __toESM(require("classix")), import_ri2 = require("react-icons/ri"), import_jsx_dev_runtime45 = require("react/jsx-dev-runtime"), Root12 = Select2.Root, Value3 = Select2.Value, ItemText3 = Select2.ItemText, ScrollUpButton3 = Select2.ScrollUpButton, ScrollDownButton2 = Select2.ScrollUpButton, Viewport4 = Select2.Viewport, Separator3 = Select2.Separator, Trigger9 = (0, import_tailwindcss_radix_ui3.twix)(
@@ -6379,7 +6493,7 @@ var import_jsx_dev_runtime46 = require("react/jsx-dev-runtime"), SelectStatus = 
   );
   if (!initCategory)
     throw new Error("No default category found");
-  let defaultValue = initCategory.id, [selectedValue, setSelectedValue] = (0, import_react52.useState)(defaultValue), selectedStatus = (_a = categories.find(
+  let defaultValue = initCategory.id, [selectedValue, setSelectedValue] = (0, import_react53.useState)(defaultValue), selectedStatus = (_a = categories.find(
     (category) => category.id === selectedValue
   )) == null ? void 0 : _a.type;
   return /* @__PURE__ */ (0, import_jsx_dev_runtime46.jsxDEV)(
@@ -6499,9 +6613,9 @@ var import_jsx_dev_runtime46 = require("react/jsx-dev-runtime"), SelectStatus = 
 };
 
 // src/app/ui/main/project/board/issue-panel/select-priority.tsx
-var import_react53 = require("react");
+var import_react54 = require("react");
 var import_jsx_dev_runtime47 = require("react/jsx-dev-runtime"), SelectPriority = ({ initPriority }) => {
-  let [selectValue, setSelectValue] = (0, import_react53.useState)(initPriority);
+  let [selectValue, setSelectValue] = (0, import_react54.useState)(initPriority);
   return /* @__PURE__ */ (0, import_jsx_dev_runtime47.jsxDEV)(
     Root12,
     {
@@ -6620,9 +6734,9 @@ var import_jsx_dev_runtime47 = require("react/jsx-dev-runtime"), SelectPriority 
 };
 
 // src/app/ui/main/project/board/issue-panel/select-asignee.tsx
-var import_react54 = require("react");
+var import_react55 = require("react");
 var import_jsx_dev_runtime48 = require("react/jsx-dev-runtime"), SelectAsignee = ({ initAsignee }) => {
-  let projectStore = useProjectStore(), users = projectStore.project.users, [selectedValue, setSelectedValue] = (0, import_react54.useState)(initAsignee), onValueChange = (userId) => {
+  let projectStore = useProjectStore(), users = projectStore.project.users, [selectedValue, setSelectedValue] = (0, import_react55.useState)(initAsignee), onValueChange = (userId) => {
     let asignee = projectStore.project.users.find(
       (user) => user.id === userId
     );
@@ -6816,9 +6930,9 @@ var import_jsx_dev_runtime50 = require("react/jsx-dev-runtime"), Spinner = () =>
 // src/app/ui/main/project/board/issue-panel/issue-panel.view.tsx
 var import_jsx_dev_runtime51 = require("react/jsx-dev-runtime"), IssuePanel = ({ issue }) => {
   var _a;
-  let [isOpen, setIsOpen] = (0, import_react55.useState)(!0), [comments, setComments] = (0, import_react55.useState)((issue == null ? void 0 : issue.comments) || []), [portalContainer, setPortalContainer] = (0, import_react55.useState)(
+  let [isOpen, setIsOpen] = (0, import_react56.useState)(!0), [comments, setComments] = (0, import_react56.useState)((issue == null ? void 0 : issue.comments) || []), [portalContainer, setPortalContainer] = (0, import_react56.useState)(
     null
-  ), { user } = useUserStore(), reporter = issue ? issue.reporter : user, formRef = (0, import_react55.useRef)(null), actionData = (0, import_react56.useActionData)(), fetcher = (0, import_react56.useFetcher)(), params = (0, import_react56.useSearchParams)(), transition = (0, import_react56.useTransition)(), location = (0, import_react56.useLocation)(), navigate = (0, import_react56.useNavigate)(), initStatus = params[0].get("category") || "TODO", userIsNotReporter = user.id !== reporter.id, postData = (0, import_react55.useCallback)(
+  ), { user } = useUserStore(), reporter = issue ? issue.reporter : user, formRef = (0, import_react56.useRef)(null), actionData = (0, import_react57.useActionData)(), fetcher = (0, import_react57.useFetcher)(), params = (0, import_react57.useSearchParams)(), transition = (0, import_react57.useTransition)(), location = (0, import_react57.useLocation)(), navigate = (0, import_react57.useNavigate)(), initStatus = params[0].get("category") || "TODO", userIsNotReporter = user.id !== reporter.id, postData = (0, import_react56.useCallback)(
     (formTarget) => {
       let isExistingIssue = Boolean(issue == null ? void 0 : issue.id), formData = new FormData(formTarget), action9 = isExistingIssue ? "update" : "create";
       formData.set("comments", JSON.stringify(comments)), formData.set("_action", action9), fetcher.submit(formData, {
@@ -6826,9 +6940,9 @@ var import_jsx_dev_runtime51 = require("react/jsx-dev-runtime"), IssuePanel = ({
       });
     },
     [comments, fetcher, issue == null ? void 0 : issue.id]
-  ), handleProgrammaticSubmit = (0, import_react55.useCallback)(() => {
+  ), handleProgrammaticSubmit = (0, import_react56.useCallback)(() => {
     formRef.current && postData(formRef.current);
-  }, [postData]), onKeyDown = (0, import_react55.useCallback)(
+  }, [postData]), onKeyDown = (0, import_react56.useCallback)(
     (e) => {
       e.shiftKey && e.key.toLowerCase() === "s" && (e.preventDefault(), handleProgrammaticSubmit());
     },
@@ -6845,12 +6959,12 @@ var import_jsx_dev_runtime51 = require("react/jsx-dev-runtime"), IssuePanel = ({
     );
     setComments(updatedComments);
   };
-  return (0, import_react55.useEffect)(() => (window.addEventListener("keydown", onKeyDown), () => window.removeEventListener("keydown", onKeyDown)), [onKeyDown]), (0, import_react55.useEffect)(() => {
+  return (0, import_react56.useEffect)(() => (window.addEventListener("keydown", onKeyDown), () => window.removeEventListener("keydown", onKeyDown)), [onKeyDown]), (0, import_react56.useEffect)(() => {
     isOpen || setTimeout(() => {
       let previousUrl = location.pathname.split("/issue")[0];
       navigate(previousUrl);
     }, 300);
-  }, [isOpen, navigate, location.pathname]), (0, import_react55.useEffect)(() => {
+  }, [isOpen, navigate, location.pathname]), (0, import_react56.useEffect)(() => {
     var _a2;
     let formAction = (_a2 = fetcher.formData) == null ? void 0 : _a2.get("_action");
     fetcher.type === "actionRedirect" && formAction === "create" && import_react_toastify3.toast.success("Issue created successfully");
@@ -6877,7 +6991,7 @@ var import_jsx_dev_runtime51 = require("react/jsx-dev-runtime"), IssuePanel = ({
             },
             this
           ),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime51.jsxDEV)(import_react56.Form, { method: "post", onSubmit: handleFormSumbit, ref: formRef, children: [
+          /* @__PURE__ */ (0, import_jsx_dev_runtime51.jsxDEV)(import_react57.Form, { method: "post", onSubmit: handleFormSumbit, ref: formRef, children: [
             /* @__PURE__ */ (0, import_jsx_dev_runtime51.jsxDEV)("div", { className: "grid grid-cols-5 gap-16", children: [
               /* @__PURE__ */ (0, import_jsx_dev_runtime51.jsxDEV)("section", { className: "col-span-3", children: [
                 /* @__PURE__ */ (0, import_jsx_dev_runtime51.jsxDEV)("div", { className: "my-5 -ml-3 mb-6", children: /* @__PURE__ */ (0, import_jsx_dev_runtime51.jsxDEV)(Title2, { asChild: !0, children: /* @__PURE__ */ (0, import_jsx_dev_runtime51.jsxDEV)(
@@ -7292,7 +7406,7 @@ var import_jsx_dev_runtime52 = require("react/jsx-dev-runtime"), meta6 = ({ data
   return (0, import_node10.redirect)(previousUrl);
 };
 function CatchBoundary3() {
-  let location = (0, import_react57.useLocation)(), navigate = (0, import_react57.useNavigate)(), boardUrl = location.pathname.split("/issue")[0], handleProgrammaticNavigation = () => {
+  let location = (0, import_react58.useLocation)(), navigate = (0, import_react58.useNavigate)(), boardUrl = location.pathname.split("/issue")[0], handleProgrammaticNavigation = () => {
     navigate(boardUrl);
   };
   return /* @__PURE__ */ (0, import_jsx_dev_runtime52.jsxDEV)(Dialog2.Root, { open: !0, children: /* @__PURE__ */ (0, import_jsx_dev_runtime52.jsxDEV)(Dialog2.Portal, { children: /* @__PURE__ */ (0, import_jsx_dev_runtime52.jsxDEV)(
@@ -7355,7 +7469,7 @@ function CatchBoundary3() {
   }, this);
 }
 function IssuePanelRoute() {
-  let { issue } = (0, import_react57.useLoaderData)();
+  let { issue } = (0, import_react58.useLoaderData)();
   return /* @__PURE__ */ (0, import_jsx_dev_runtime52.jsxDEV)(IssuePanel, { issue }, void 0, !1, {
     fileName: "src/app/routes/__main/projects.$projectId/board/issue/$issueId.tsx",
     lineNumber: 197,
@@ -7439,17 +7553,17 @@ __export(__exports, {
   default: () => Error404Route,
   loader: () => loader12
 });
-var import_react58 = require("react"), import_react59 = require("@remix-run/react"), import_react_toastify4 = require("react-toastify");
+var import_react59 = require("react"), import_react60 = require("@remix-run/react"), import_react_toastify4 = require("react-toastify");
 var import_jsx_dev_runtime54 = require("react/jsx-dev-runtime"), loader12 = async () => {
   throw new Response("Not Found", {
     status: 404
   });
 };
 function CatchBoundary4() {
-  (0, import_react58.useEffect)(() => {
+  (0, import_react59.useEffect)(() => {
     import_react_toastify4.toast.warning("Try to go back to the previous page.");
   }, []);
-  let params = (0, import_react59.useParams)(), projectId = params.projectId, errorMessage = `The section "/${params["*"]}" does not exists, so a fallback 404 is shown (check network tab). Navigate to boards page`;
+  let params = (0, import_react60.useParams)(), projectId = params.projectId, errorMessage = `The section "/${params["*"]}" does not exists, so a fallback 404 is shown (check network tab). Navigate to boards page`;
   return /* @__PURE__ */ (0, import_jsx_dev_runtime54.jsxDEV)("div", { className: "flex h-full items-center justify-center", children: /* @__PURE__ */ (0, import_jsx_dev_runtime54.jsxDEV)(Error404, { message: errorMessage, href: `/projects/${projectId}/board` }, void 0, !1, {
     fileName: "src/app/routes/__main/projects.$projectId/$.tsx",
     lineNumber: 25,
@@ -7473,13 +7587,13 @@ __export(projects_exports, {
   loader: () => loader13,
   meta: () => meta8
 });
-var import_node12 = require("@remix-run/node"), import_react62 = require("@remix-run/react");
+var import_node12 = require("@remix-run/node"), import_react63 = require("@remix-run/react");
 
 // src/app/ui/main/projects/projects.view.tsx
-var import_react61 = require("@remix-run/react"), import_ai3 = require("react-icons/ai");
+var import_react62 = require("@remix-run/react"), import_ai3 = require("react-icons/ai");
 
 // src/app/ui/main/projects/project-card/project-card.tsx
-var import_react60 = require("@remix-run/react"), import_md3 = require("react-icons/md"), import_classix23 = __toESM(require("classix"));
+var import_react61 = require("@remix-run/react"), import_md3 = require("react-icons/md"), import_classix23 = __toESM(require("classix"));
 
 // src/domain/category/category.ts
 var categoryTypes = ["TODO", "IN_PROGRESS", "DONE"], categoryTypeDict = {
@@ -7548,7 +7662,7 @@ var import_jsx_dev_runtime55 = require("react/jsx-dev-runtime"), defaultProjects
   let isDefaultProject = defaultProjectsIds.includes(project.id);
   return /* @__PURE__ */ (0, import_jsx_dev_runtime55.jsxDEV)("div", { className: "w-[400px]", children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime55.jsxDEV)(
-      import_react60.Link,
+      import_react61.Link,
       {
         to: project.id,
         className: (0, import_classix23.default)(
@@ -7648,7 +7762,7 @@ var import_jsx_dev_runtime55 = require("react/jsx-dev-runtime"), defaultProjects
             columnNumber: 13
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime55.jsxDEV)(
-            import_react60.Form,
+            import_react61.Form,
             {
               method: "delete",
               className: "mt-8 flex w-full justify-end gap-4",
@@ -7723,7 +7837,7 @@ var import_jsx_dev_runtime56 = require("react/jsx-dev-runtime"), ProjectsView = 
     lineNumber: 12,
     columnNumber: 7
   }, this),
-  /* @__PURE__ */ (0, import_jsx_dev_runtime56.jsxDEV)("div", { className: "mt-8", children: /* @__PURE__ */ (0, import_jsx_dev_runtime56.jsxDEV)(import_react61.Link, { to: "new", className: "flex w-fit", children: /* @__PURE__ */ (0, import_jsx_dev_runtime56.jsxDEV)(Button, { color: "neutral", variant: "subtlest", className: "py-3 pl-3 pr-4", children: [
+  /* @__PURE__ */ (0, import_jsx_dev_runtime56.jsxDEV)("div", { className: "mt-8", children: /* @__PURE__ */ (0, import_jsx_dev_runtime56.jsxDEV)(import_react62.Link, { to: "new", className: "flex w-fit", children: /* @__PURE__ */ (0, import_jsx_dev_runtime56.jsxDEV)(Button, { color: "neutral", variant: "subtlest", className: "py-3 pl-3 pr-4", children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime56.jsxDEV)("span", { children: /* @__PURE__ */ (0, import_jsx_dev_runtime56.jsxDEV)(import_ai3.AiOutlinePlus, { size: 22 }, void 0, !1, {
       fileName: "src/app/ui/main/projects/projects.view.tsx",
       lineNumber: 17,
@@ -7760,7 +7874,7 @@ var import_jsx_dev_runtime56 = require("react/jsx-dev-runtime"), ProjectsView = 
     lineNumber: 23,
     columnNumber: 7
   }, this),
-  /* @__PURE__ */ (0, import_jsx_dev_runtime56.jsxDEV)(import_react61.Outlet, {}, void 0, !1, {
+  /* @__PURE__ */ (0, import_jsx_dev_runtime56.jsxDEV)(import_react62.Outlet, {}, void 0, !1, {
     fileName: "src/app/ui/main/projects/projects.view.tsx",
     lineNumber: 28,
     columnNumber: 7
@@ -7831,7 +7945,7 @@ function ErrorBoundary6({ error }) {
   }, this);
 }
 function ProjectsRoute() {
-  let { projectsSummary } = (0, import_react62.useLoaderData)();
+  let { projectsSummary } = (0, import_react63.useLoaderData)();
   return /* @__PURE__ */ (0, import_jsx_dev_runtime57.jsxDEV)(ProjectsView, { projectsSummary }, void 0, !1, {
     fileName: "src/app/routes/__main/projects.tsx",
     lineNumber: 96,
@@ -7847,14 +7961,14 @@ __export(new_exports2, {
   loader: () => loader14,
   meta: () => meta9
 });
-var import_node13 = require("@remix-run/node"), import_react66 = require("@remix-run/react");
+var import_node13 = require("@remix-run/node"), import_react67 = require("@remix-run/react");
 
 // src/app/ui/main/projects/create-project-panel/create-project-panel.view.tsx
-var import_react64 = require("react"), import_react65 = require("@remix-run/react");
+var import_react65 = require("react"), import_react66 = require("@remix-run/react");
 var Checkbox = __toESM(require("@radix-ui/react-checkbox")), import_classix24 = __toESM(require("classix")), import_bs3 = require("react-icons/bs");
 
 // src/app/ui/main/projects/create-project-panel/create-project-panel-header.tsx
-var import_react63 = require("@remix-run/react"), import_io53 = require("react-icons/io5"), import_jsx_dev_runtime58 = require("react/jsx-dev-runtime"), CreateProjectPanelHeader = ({
+var import_react64 = require("@remix-run/react"), import_io53 = require("react-icons/io5"), import_jsx_dev_runtime58 = require("react/jsx-dev-runtime"), CreateProjectPanelHeader = ({
   id
 }) => /* @__PURE__ */ (0, import_jsx_dev_runtime58.jsxDEV)("div", { className: "flex", children: [
   /* @__PURE__ */ (0, import_jsx_dev_runtime58.jsxDEV)("span", { className: "flex flex-grow items-center", children: /* @__PURE__ */ (0, import_jsx_dev_runtime58.jsxDEV)("span", { className: "ml-1", children: id }, void 0, !1, {
@@ -7867,7 +7981,7 @@ var import_react63 = require("@remix-run/react"), import_io53 = require("react-i
     columnNumber: 7
   }, this),
   /* @__PURE__ */ (0, import_jsx_dev_runtime58.jsxDEV)(
-    import_react63.Link,
+    import_react64.Link,
     {
       to: "/projects",
       className: "ml-3 flex cursor-pointer rounded border-none p-0.5 text-icon hover:bg-background-accent-grey-subtlest",
@@ -7898,9 +8012,9 @@ var import_jsx_dev_runtime59 = require("react/jsx-dev-runtime"), CreateProjectPa
   users
 }) => {
   var _a;
-  let [isOpen, setIsOpen] = (0, import_react64.useState)(!0), [portalContainer, setPortalContainer] = (0, import_react64.useState)(
+  let [isOpen, setIsOpen] = (0, import_react65.useState)(!0), [portalContainer, setPortalContainer] = (0, import_react65.useState)(
     null
-  ), formRef = (0, import_react64.useRef)(null), fetcher = (0, import_react65.useFetcher)(), navigate = (0, import_react65.useNavigate)(), actionData = (0, import_react65.useActionData)(), { user: loggedUser } = useUserStore(), postData = (0, import_react64.useCallback)(
+  ), formRef = (0, import_react65.useRef)(null), fetcher = (0, import_react66.useFetcher)(), navigate = (0, import_react66.useNavigate)(), actionData = (0, import_react66.useActionData)(), { user: loggedUser } = useUserStore(), postData = (0, import_react65.useCallback)(
     (formTarget) => {
       let formData = new FormData(formTarget);
       formData.set("_action", "upsert"), fetcher.submit(formData, {
@@ -7908,20 +8022,20 @@ var import_jsx_dev_runtime59 = require("react/jsx-dev-runtime"), CreateProjectPa
       });
     },
     [fetcher]
-  ), handleProgrammaticSubmit = (0, import_react64.useCallback)(() => {
+  ), handleProgrammaticSubmit = (0, import_react65.useCallback)(() => {
     formRef.current && postData(formRef.current);
   }, [postData]), handleProgrammaticClose = () => {
     setIsOpen(!1);
-  }, onKeyDown = (0, import_react64.useCallback)(
+  }, onKeyDown = (0, import_react65.useCallback)(
     (e) => {
       e.shiftKey && e.key.toLowerCase() === "s" && (e.preventDefault(), handleProgrammaticSubmit());
     },
     [handleProgrammaticSubmit]
   );
-  return (0, import_react64.useEffect)(() => {
+  return (0, import_react65.useEffect)(() => {
     var _a2;
     (actionData == null ? void 0 : actionData.errors) && Object.keys(actionData == null ? void 0 : actionData.errors).length > 0 && ((_a2 = document.getElementById("project-panel-overlay")) == null || _a2.scrollTo({ top: 0, behavior: "smooth" }));
-  }, [actionData]), (0, import_react64.useEffect)(() => (window.addEventListener("keydown", onKeyDown), () => window.removeEventListener("keydown", onKeyDown)), [onKeyDown]), (0, import_react64.useEffect)(() => {
+  }, [actionData]), (0, import_react65.useEffect)(() => (window.addEventListener("keydown", onKeyDown), () => window.removeEventListener("keydown", onKeyDown)), [onKeyDown]), (0, import_react65.useEffect)(() => {
     isOpen || setTimeout(() => navigate("/projects"), 300);
   }, [isOpen, navigate]), /* @__PURE__ */ (0, import_jsx_dev_runtime59.jsxDEV)(import_jsx_dev_runtime59.Fragment, { children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime59.jsxDEV)(Root8, { open: !0, children: /* @__PURE__ */ (0, import_jsx_dev_runtime59.jsxDEV)(Portal4, { container: portalContainer, children: /* @__PURE__ */ (0, import_jsx_dev_runtime59.jsxDEV)(
@@ -7953,7 +8067,7 @@ var import_jsx_dev_runtime59 = require("react/jsx-dev-runtime"), CreateProjectPa
                 },
                 this
               ),
-              /* @__PURE__ */ (0, import_jsx_dev_runtime59.jsxDEV)(import_react65.Form, { method: "post", ref: formRef, children: [
+              /* @__PURE__ */ (0, import_jsx_dev_runtime59.jsxDEV)(import_react66.Form, { method: "post", ref: formRef, children: [
                 /* @__PURE__ */ (0, import_jsx_dev_runtime59.jsxDEV)("div", { className: "mb-6", children: [
                   /* @__PURE__ */ (0, import_jsx_dev_runtime59.jsxDEV)(Title2, { className: "-ml-3 mb-8 mt-5", children: /* @__PURE__ */ (0, import_jsx_dev_runtime59.jsxDEV)(
                     Title3,
@@ -8322,7 +8436,7 @@ var import_jsx_dev_runtime60 = require("react/jsx-dev-runtime"), meta9 = () => {
   }
 };
 function IssuePanelRoute3() {
-  let { users } = (0, import_react66.useLoaderData)();
+  let { users } = (0, import_react67.useLoaderData)();
   return /* @__PURE__ */ (0, import_jsx_dev_runtime60.jsxDEV)(CreateProjectPanelView, { users }, void 0, !1, {
     fileName: "src/app/routes/__main/projects/new.tsx",
     lineNumber: 123,
@@ -8380,12 +8494,12 @@ __export(login_exports, {
   loader: () => loader16,
   meta: () => meta10
 });
-var import_node15 = require("@remix-run/node"), import_react69 = require("@remix-run/react");
+var import_node15 = require("@remix-run/node"), import_react70 = require("@remix-run/react");
 
 // src/app/ui/login/login.view.tsx
-var import_react67 = require("react"), import_react68 = require("@remix-run/react");
+var import_react68 = require("react"), import_react69 = require("@remix-run/react");
 var import_jsx_dev_runtime62 = require("react/jsx-dev-runtime"), LoginView = ({ users }) => {
-  let [selectedValue, setSelectedValue] = (0, import_react67.useState)(userMock1), onValueChange = (userId) => {
+  let [selectedValue, setSelectedValue] = (0, import_react68.useState)(userMock1), onValueChange = (userId) => {
     let foundUser = users.find((user) => user.id === userId);
     foundUser && setSelectedValue(foundUser);
   };
@@ -8400,7 +8514,7 @@ var import_jsx_dev_runtime62 = require("react/jsx-dev-runtime"), LoginView = ({ 
       lineNumber: 24,
       columnNumber: 7
     }, this),
-    /* @__PURE__ */ (0, import_jsx_dev_runtime62.jsxDEV)(import_react68.Form, { method: "post", className: "mx-auto w-[300px]", children: [
+    /* @__PURE__ */ (0, import_jsx_dev_runtime62.jsxDEV)(import_react69.Form, { method: "post", className: "mx-auto w-[300px]", children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime62.jsxDEV)(
         Root12,
         {
@@ -8577,7 +8691,7 @@ var import_jsx_dev_runtime63 = require("react/jsx-dev-runtime"), meta10 = () => 
   console.error("Unknown action", _action);
 };
 function LoginRoute() {
-  let { users } = (0, import_react69.useLoaderData)();
+  let { users } = (0, import_react70.useLoaderData)();
   return /* @__PURE__ */ (0, import_jsx_dev_runtime63.jsxDEV)(LoginView, { users }, void 0, !1, {
     fileName: "src/app/routes/login.tsx",
     lineNumber: 78,
@@ -8600,7 +8714,7 @@ function NotFound404Route() {
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { entry: { module: "/build/entry.client-5OXYURB5.js", imports: ["/build/_shared/chunk-TGCD45UD.js", "/build/_shared/chunk-6DAQMQYB.js", "/build/_shared/chunk-JR7JHID7.js", "/build/_shared/chunk-4D7IJTTE.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-5I7RTRC2.js", imports: ["/build/_shared/chunk-W7V6DQNY.js", "/build/_shared/chunk-XDZK2O2T.js", "/build/_shared/chunk-FSLR7CSD.js", "/build/_shared/chunk-TH5S6TNI.js", "/build/_shared/chunk-WA2U3LPD.js", "/build/_shared/chunk-7AQDZ4MM.js", "/build/_shared/chunk-NY22QEBI.js", "/build/_shared/chunk-7JZ6KRE4.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !0, hasErrorBoundary: !0 }, "routes/404": { id: "routes/404", parentId: "root", path: "404", index: void 0, caseSensitive: void 0, module: "/build/routes/404-SJMV5CRH.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/__main": { id: "routes/__main", parentId: "root", path: void 0, index: void 0, caseSensitive: void 0, module: "/build/routes/__main-5KWF5YXW.js", imports: ["/build/_shared/chunk-2B7KGIOR.js", "/build/_shared/chunk-GZRJBEAL.js", "/build/_shared/chunk-2Z5ULB5T.js", "/build/_shared/chunk-G3K6ANVA.js", "/build/_shared/chunk-EJKK3DBE.js", "/build/_shared/chunk-EZ43UAVT.js", "/build/_shared/chunk-RW3FMY4H.js", "/build/_shared/chunk-Y2ZHDY2W.js", "/build/_shared/chunk-IBZ2AZBF.js", "/build/_shared/chunk-6H526VOR.js", "/build/_shared/chunk-6UKFTLV3.js", "/build/_shared/chunk-O2O6DMNV.js", "/build/_shared/chunk-ELWJTL4F.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/__main/projects": { id: "routes/__main/projects", parentId: "routes/__main", path: "projects", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects-ZPPPCPJ5.js", imports: ["/build/_shared/chunk-6NT7ORZH.js", "/build/_shared/chunk-NCHMJE4I.js", "/build/_shared/chunk-VD4CXEVL.js", "/build/_shared/chunk-KEOKG2I2.js", "/build/_shared/chunk-KHVVK2Q5.js", "/build/_shared/chunk-FSLR7CSD.js", "/build/_shared/chunk-WA2U3LPD.js", "/build/_shared/chunk-NY22QEBI.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !0 }, "routes/__main/projects.$projectId": { id: "routes/__main/projects.$projectId", parentId: "routes/__main", path: "projects/:projectId", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects.$projectId-F22RAQJ5.js", imports: ["/build/_shared/chunk-LR5MD5TU.js", "/build/_shared/chunk-6P7PDWVX.js", "/build/_shared/chunk-XDZK2O2T.js", "/build/_shared/chunk-FSLR7CSD.js", "/build/_shared/chunk-IYD4CINF.js", "/build/_shared/chunk-WA2U3LPD.js", "/build/_shared/chunk-7AQDZ4MM.js", "/build/_shared/chunk-NY22QEBI.js", "/build/_shared/chunk-7JZ6KRE4.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !0, hasErrorBoundary: !0 }, "routes/__main/projects.$projectId/$": { id: "routes/__main/projects.$projectId/$", parentId: "routes/__main/projects.$projectId", path: "*", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects.$projectId/$-IV6MMW74.js", imports: ["/build/_shared/chunk-TH5S6TNI.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !0, hasErrorBoundary: !1 }, "routes/__main/projects.$projectId/analytics": { id: "routes/__main/projects.$projectId/analytics", parentId: "routes/__main/projects.$projectId", path: "analytics", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects.$projectId/analytics-AFUZEPQV.js", imports: ["/build/_shared/chunk-ELWJTL4F.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !0 }, "routes/__main/projects.$projectId/board": { id: "routes/__main/projects.$projectId/board", parentId: "routes/__main/projects.$projectId", path: "board", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects.$projectId/board-FM3VIB32.js", imports: ["/build/_shared/chunk-YGP6G43A.js", "/build/_shared/chunk-2BRJKPL7.js", "/build/_shared/chunk-7UW2IBDE.js", "/build/_shared/chunk-UD3IMZBA.js", "/build/_shared/chunk-2B7KGIOR.js", "/build/_shared/chunk-GZRJBEAL.js", "/build/_shared/chunk-2Z5ULB5T.js", "/build/_shared/chunk-G3K6ANVA.js", "/build/_shared/chunk-RW3FMY4H.js", "/build/_shared/chunk-IBZ2AZBF.js", "/build/_shared/chunk-6H526VOR.js", "/build/_shared/chunk-6UKFTLV3.js", "/build/_shared/chunk-O2O6DMNV.js", "/build/_shared/chunk-ELWJTL4F.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !0 }, "routes/__main/projects.$projectId/board/issue/$issueId": { id: "routes/__main/projects.$projectId/board/issue/$issueId", parentId: "routes/__main/projects.$projectId/board", path: "issue/:issueId", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects.$projectId/board/issue/$issueId-55FNBC4X.js", imports: ["/build/_shared/chunk-LPML2SI5.js", "/build/_shared/chunk-GYFGIZTY.js", "/build/_shared/chunk-6NT7ORZH.js", "/build/_shared/chunk-NCHMJE4I.js", "/build/_shared/chunk-KORFVFP2.js", "/build/_shared/chunk-KEOKG2I2.js", "/build/_shared/chunk-KHVVK2Q5.js", "/build/_shared/chunk-EJKK3DBE.js", "/build/_shared/chunk-EZ43UAVT.js", "/build/_shared/chunk-Y2ZHDY2W.js", "/build/_shared/chunk-LR5MD5TU.js", "/build/_shared/chunk-XDZK2O2T.js", "/build/_shared/chunk-FSLR7CSD.js", "/build/_shared/chunk-TH5S6TNI.js", "/build/_shared/chunk-IYD4CINF.js", "/build/_shared/chunk-WA2U3LPD.js", "/build/_shared/chunk-NY22QEBI.js", "/build/_shared/chunk-7JZ6KRE4.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !0, hasErrorBoundary: !1 }, "routes/__main/projects.$projectId/board/issue/issue-event": { id: "routes/__main/projects.$projectId/board/issue/issue-event", parentId: "routes/__main/projects.$projectId/board", path: "issue/issue-event", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects.$projectId/board/issue/issue-event-5IBXZDGG.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/__main/projects.$projectId/board/issue/new": { id: "routes/__main/projects.$projectId/board/issue/new", parentId: "routes/__main/projects.$projectId/board", path: "issue/new", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects.$projectId/board/issue/new-35UOVEZI.js", imports: ["/build/_shared/chunk-LPML2SI5.js", "/build/_shared/chunk-GYFGIZTY.js", "/build/_shared/chunk-6NT7ORZH.js", "/build/_shared/chunk-NCHMJE4I.js", "/build/_shared/chunk-KORFVFP2.js", "/build/_shared/chunk-KEOKG2I2.js", "/build/_shared/chunk-KHVVK2Q5.js", "/build/_shared/chunk-EJKK3DBE.js", "/build/_shared/chunk-EZ43UAVT.js", "/build/_shared/chunk-Y2ZHDY2W.js", "/build/_shared/chunk-LR5MD5TU.js", "/build/_shared/chunk-FSLR7CSD.js", "/build/_shared/chunk-TH5S6TNI.js", "/build/_shared/chunk-IYD4CINF.js", "/build/_shared/chunk-WA2U3LPD.js", "/build/_shared/chunk-NY22QEBI.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/__main/projects.$projectId/server-error": { id: "routes/__main/projects.$projectId/server-error", parentId: "routes/__main/projects.$projectId", path: "server-error", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects.$projectId/server-error-MNRN2LS6.js", imports: ["/build/_shared/chunk-TH5S6TNI.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !0 }, "routes/__main/projects/new": { id: "routes/__main/projects/new", parentId: "routes/__main/projects", path: "new", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects/new-BSOPWKDT.js", imports: ["/build/_shared/chunk-KORFVFP2.js", "/build/_shared/chunk-7UW2IBDE.js", "/build/_shared/chunk-UD3IMZBA.js", "/build/_shared/chunk-EZ43UAVT.js", "/build/_shared/chunk-RW3FMY4H.js", "/build/_shared/chunk-Y2ZHDY2W.js", "/build/_shared/chunk-IBZ2AZBF.js", "/build/_shared/chunk-6H526VOR.js", "/build/_shared/chunk-6P7PDWVX.js", "/build/_shared/chunk-O2O6DMNV.js", "/build/_shared/chunk-ELWJTL4F.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/action/logout": { id: "routes/action/logout", parentId: "root", path: "action/logout", index: void 0, caseSensitive: void 0, module: "/build/routes/action/logout-VWA62CPJ.js", imports: void 0, hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/action/set-theme": { id: "routes/action/set-theme", parentId: "root", path: "action/set-theme", index: void 0, caseSensitive: void 0, module: "/build/routes/action/set-theme-FHTI574H.js", imports: void 0, hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-43VGXR5B.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !0, hasErrorBoundary: !1 }, "routes/login": { id: "routes/login", parentId: "root", path: "login", index: void 0, caseSensitive: void 0, module: "/build/routes/login-JHURTNDI.js", imports: ["/build/_shared/chunk-GYFGIZTY.js", "/build/_shared/chunk-2BRJKPL7.js", "/build/_shared/chunk-NCHMJE4I.js", "/build/_shared/chunk-UD3IMZBA.js", "/build/_shared/chunk-KHVVK2Q5.js", "/build/_shared/chunk-2Z5ULB5T.js", "/build/_shared/chunk-RW3FMY4H.js", "/build/_shared/chunk-Y2ZHDY2W.js", "/build/_shared/chunk-6H526VOR.js", "/build/_shared/chunk-LR5MD5TU.js", "/build/_shared/chunk-O2O6DMNV.js", "/build/_shared/chunk-ELWJTL4F.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "9264acc2", hmr: void 0, url: "/build/manifest-9264ACC2.js" };
+var assets_manifest_default = { entry: { module: "/build/entry.client-5OXYURB5.js", imports: ["/build/_shared/chunk-TGCD45UD.js", "/build/_shared/chunk-6DAQMQYB.js", "/build/_shared/chunk-JR7JHID7.js", "/build/_shared/chunk-4D7IJTTE.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-5I7RTRC2.js", imports: ["/build/_shared/chunk-W7V6DQNY.js", "/build/_shared/chunk-XDZK2O2T.js", "/build/_shared/chunk-FSLR7CSD.js", "/build/_shared/chunk-TH5S6TNI.js", "/build/_shared/chunk-WA2U3LPD.js", "/build/_shared/chunk-7AQDZ4MM.js", "/build/_shared/chunk-NY22QEBI.js", "/build/_shared/chunk-7JZ6KRE4.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !0, hasErrorBoundary: !0 }, "routes/404": { id: "routes/404", parentId: "root", path: "404", index: void 0, caseSensitive: void 0, module: "/build/routes/404-SJMV5CRH.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/__main": { id: "routes/__main", parentId: "root", path: void 0, index: void 0, caseSensitive: void 0, module: "/build/routes/__main-5KWF5YXW.js", imports: ["/build/_shared/chunk-2B7KGIOR.js", "/build/_shared/chunk-GZRJBEAL.js", "/build/_shared/chunk-2Z5ULB5T.js", "/build/_shared/chunk-G3K6ANVA.js", "/build/_shared/chunk-EJKK3DBE.js", "/build/_shared/chunk-EZ43UAVT.js", "/build/_shared/chunk-RW3FMY4H.js", "/build/_shared/chunk-Y2ZHDY2W.js", "/build/_shared/chunk-IBZ2AZBF.js", "/build/_shared/chunk-6H526VOR.js", "/build/_shared/chunk-6UKFTLV3.js", "/build/_shared/chunk-O2O6DMNV.js", "/build/_shared/chunk-ELWJTL4F.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/__main/projects": { id: "routes/__main/projects", parentId: "routes/__main", path: "projects", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects-ZPPPCPJ5.js", imports: ["/build/_shared/chunk-6NT7ORZH.js", "/build/_shared/chunk-NCHMJE4I.js", "/build/_shared/chunk-VD4CXEVL.js", "/build/_shared/chunk-KEOKG2I2.js", "/build/_shared/chunk-KHVVK2Q5.js", "/build/_shared/chunk-FSLR7CSD.js", "/build/_shared/chunk-WA2U3LPD.js", "/build/_shared/chunk-NY22QEBI.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !0 }, "routes/__main/projects.$projectId": { id: "routes/__main/projects.$projectId", parentId: "routes/__main", path: "projects/:projectId", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects.$projectId-F22RAQJ5.js", imports: ["/build/_shared/chunk-LR5MD5TU.js", "/build/_shared/chunk-6P7PDWVX.js", "/build/_shared/chunk-XDZK2O2T.js", "/build/_shared/chunk-FSLR7CSD.js", "/build/_shared/chunk-IYD4CINF.js", "/build/_shared/chunk-WA2U3LPD.js", "/build/_shared/chunk-7AQDZ4MM.js", "/build/_shared/chunk-NY22QEBI.js", "/build/_shared/chunk-7JZ6KRE4.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !0, hasErrorBoundary: !0 }, "routes/__main/projects.$projectId/$": { id: "routes/__main/projects.$projectId/$", parentId: "routes/__main/projects.$projectId", path: "*", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects.$projectId/$-IV6MMW74.js", imports: ["/build/_shared/chunk-TH5S6TNI.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !0, hasErrorBoundary: !1 }, "routes/__main/projects.$projectId/analytics": { id: "routes/__main/projects.$projectId/analytics", parentId: "routes/__main/projects.$projectId", path: "analytics", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects.$projectId/analytics-N7TEJDFK.js", imports: ["/build/_shared/chunk-ELWJTL4F.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !0 }, "routes/__main/projects.$projectId/board": { id: "routes/__main/projects.$projectId/board", parentId: "routes/__main/projects.$projectId", path: "board", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects.$projectId/board-FM3VIB32.js", imports: ["/build/_shared/chunk-YGP6G43A.js", "/build/_shared/chunk-2BRJKPL7.js", "/build/_shared/chunk-7UW2IBDE.js", "/build/_shared/chunk-UD3IMZBA.js", "/build/_shared/chunk-2B7KGIOR.js", "/build/_shared/chunk-GZRJBEAL.js", "/build/_shared/chunk-2Z5ULB5T.js", "/build/_shared/chunk-G3K6ANVA.js", "/build/_shared/chunk-RW3FMY4H.js", "/build/_shared/chunk-IBZ2AZBF.js", "/build/_shared/chunk-6H526VOR.js", "/build/_shared/chunk-6UKFTLV3.js", "/build/_shared/chunk-O2O6DMNV.js", "/build/_shared/chunk-ELWJTL4F.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !0 }, "routes/__main/projects.$projectId/board/issue/$issueId": { id: "routes/__main/projects.$projectId/board/issue/$issueId", parentId: "routes/__main/projects.$projectId/board", path: "issue/:issueId", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects.$projectId/board/issue/$issueId-55FNBC4X.js", imports: ["/build/_shared/chunk-LPML2SI5.js", "/build/_shared/chunk-GYFGIZTY.js", "/build/_shared/chunk-6NT7ORZH.js", "/build/_shared/chunk-NCHMJE4I.js", "/build/_shared/chunk-KORFVFP2.js", "/build/_shared/chunk-KEOKG2I2.js", "/build/_shared/chunk-KHVVK2Q5.js", "/build/_shared/chunk-EJKK3DBE.js", "/build/_shared/chunk-EZ43UAVT.js", "/build/_shared/chunk-Y2ZHDY2W.js", "/build/_shared/chunk-LR5MD5TU.js", "/build/_shared/chunk-XDZK2O2T.js", "/build/_shared/chunk-FSLR7CSD.js", "/build/_shared/chunk-TH5S6TNI.js", "/build/_shared/chunk-IYD4CINF.js", "/build/_shared/chunk-WA2U3LPD.js", "/build/_shared/chunk-NY22QEBI.js", "/build/_shared/chunk-7JZ6KRE4.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !0, hasErrorBoundary: !1 }, "routes/__main/projects.$projectId/board/issue/issue-event": { id: "routes/__main/projects.$projectId/board/issue/issue-event", parentId: "routes/__main/projects.$projectId/board", path: "issue/issue-event", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects.$projectId/board/issue/issue-event-5IBXZDGG.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/__main/projects.$projectId/board/issue/new": { id: "routes/__main/projects.$projectId/board/issue/new", parentId: "routes/__main/projects.$projectId/board", path: "issue/new", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects.$projectId/board/issue/new-35UOVEZI.js", imports: ["/build/_shared/chunk-LPML2SI5.js", "/build/_shared/chunk-GYFGIZTY.js", "/build/_shared/chunk-6NT7ORZH.js", "/build/_shared/chunk-NCHMJE4I.js", "/build/_shared/chunk-KORFVFP2.js", "/build/_shared/chunk-KEOKG2I2.js", "/build/_shared/chunk-KHVVK2Q5.js", "/build/_shared/chunk-EJKK3DBE.js", "/build/_shared/chunk-EZ43UAVT.js", "/build/_shared/chunk-Y2ZHDY2W.js", "/build/_shared/chunk-LR5MD5TU.js", "/build/_shared/chunk-FSLR7CSD.js", "/build/_shared/chunk-TH5S6TNI.js", "/build/_shared/chunk-IYD4CINF.js", "/build/_shared/chunk-WA2U3LPD.js", "/build/_shared/chunk-NY22QEBI.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/__main/projects.$projectId/server-error": { id: "routes/__main/projects.$projectId/server-error", parentId: "routes/__main/projects.$projectId", path: "server-error", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects.$projectId/server-error-MNRN2LS6.js", imports: ["/build/_shared/chunk-TH5S6TNI.js"], hasAction: !1, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !0 }, "routes/__main/projects/new": { id: "routes/__main/projects/new", parentId: "routes/__main/projects", path: "new", index: void 0, caseSensitive: void 0, module: "/build/routes/__main/projects/new-BSOPWKDT.js", imports: ["/build/_shared/chunk-KORFVFP2.js", "/build/_shared/chunk-7UW2IBDE.js", "/build/_shared/chunk-UD3IMZBA.js", "/build/_shared/chunk-EZ43UAVT.js", "/build/_shared/chunk-RW3FMY4H.js", "/build/_shared/chunk-Y2ZHDY2W.js", "/build/_shared/chunk-IBZ2AZBF.js", "/build/_shared/chunk-6H526VOR.js", "/build/_shared/chunk-6P7PDWVX.js", "/build/_shared/chunk-O2O6DMNV.js", "/build/_shared/chunk-ELWJTL4F.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/action/logout": { id: "routes/action/logout", parentId: "root", path: "action/logout", index: void 0, caseSensitive: void 0, module: "/build/routes/action/logout-VWA62CPJ.js", imports: void 0, hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/action/set-theme": { id: "routes/action/set-theme", parentId: "root", path: "action/set-theme", index: void 0, caseSensitive: void 0, module: "/build/routes/action/set-theme-FHTI574H.js", imports: void 0, hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-43VGXR5B.js", imports: void 0, hasAction: !1, hasLoader: !0, hasCatchBoundary: !0, hasErrorBoundary: !1 }, "routes/login": { id: "routes/login", parentId: "root", path: "login", index: void 0, caseSensitive: void 0, module: "/build/routes/login-JHURTNDI.js", imports: ["/build/_shared/chunk-GYFGIZTY.js", "/build/_shared/chunk-2BRJKPL7.js", "/build/_shared/chunk-NCHMJE4I.js", "/build/_shared/chunk-UD3IMZBA.js", "/build/_shared/chunk-KHVVK2Q5.js", "/build/_shared/chunk-2Z5ULB5T.js", "/build/_shared/chunk-RW3FMY4H.js", "/build/_shared/chunk-Y2ZHDY2W.js", "/build/_shared/chunk-6H526VOR.js", "/build/_shared/chunk-LR5MD5TU.js", "/build/_shared/chunk-O2O6DMNV.js", "/build/_shared/chunk-ELWJTL4F.js"], hasAction: !0, hasLoader: !0, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, version: "701a4b22", hmr: void 0, url: "/build/manifest-701A4B22.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", future = { v2_dev: !1, unstable_postcss: !1, unstable_tailwind: !1, v2_errorBoundary: !1, v2_headers: !1, v2_meta: !0, v2_normalizeFormMethod: !0, v2_routeConvention: !1 }, publicPath = "/build/", entry = { module: entry_server_exports }, routes = {
