@@ -116,6 +116,18 @@ export const CreateProjectPanelView = ({
                   <div className="-ml-3 mb-5">
                     <Description initDescription={project?.description || ""} />
                   </div>
+                  <p className="font-primary-black text-font">
+                    Project DeadLine
+                  </p>
+                  <div className="mb-6 grid grid-cols-2 gap-1">
+                    <span>Deadline:</span>
+                    
+                    <span><input className="border rounded-sm" type="date" /></span>
+                    <span>Days Left: </span>
+                    <span><input className="border rounded-sm"/></span>
+                  </div>
+
+                  <p className="font-primary-black text-font">Assign to Institute</p>
                   <ul className="space-y-1.5">
                     {users.map((user) => (
                       <li

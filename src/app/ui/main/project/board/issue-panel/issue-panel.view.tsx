@@ -157,6 +157,15 @@ export const IssuePanel = ({ issue }: Props): JSX.Element => {
                         readOnly={userIsNotReporter}
                       />
                     </div>
+                    <p className="font-primary-black text-font">
+                      Project DeadLine
+                    </p>
+                    <div className="mb-6 grid grid-cols-2">
+                      <span>Deadline:</span>
+                      <span>16 April 2024</span>
+                      <span>Days Left: </span>
+                      <span>45 days</span>
+                    </div>
                     <div>
                       <p className="font-primary-black text-font">Comments</p>
                       <div>

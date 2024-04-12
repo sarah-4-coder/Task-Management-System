@@ -8,7 +8,6 @@ import { Button } from "@app/components/button";
 
 export const UserProfile = (): JSX.Element => {
   const { user } = useUserStore();
-
   return (
     <DropdownMenu.Root>
       <DropdownMenu.Trigger className="ml-1 rounded-full outline outline-2 outline-border-disabled hover:outline-border-brand">

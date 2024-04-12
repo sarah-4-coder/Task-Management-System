@@ -3,8 +3,8 @@ import { usersMock } from "@domain/user";
 import { categoriesMock1, categoriesMock2 } from "@domain/category";
 
 export const projectMock1: Project = {
-  id: "jira-clone",
-  name: "JIRA Clone",
+  id: "tasks-software",
+  name: "Tasks Software",
   description: "Software project",
   users: usersMock,
   categories: categoriesMock1,
@@ -14,8 +14,8 @@ export const projectMock1: Project = {
 };
 
 export const projectMock2: Project = {
-  id: "second-project",
-  name: "Second project",
+  id: "desh-ka-mentor",
+  name: "Desh Ka Mentor",
   description:
     "Super long description to test how it clamps on project card in the projects page and in the project sidebar",
   users: usersMock.slice(0, 3), // Only the first 3 users

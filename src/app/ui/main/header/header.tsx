@@ -1,10 +1,5 @@
 import { Link } from "@remix-run/react";
-import cx from "classix";
-import { HiQuestionMarkCircle } from "react-icons/hi";
-import { AiFillGithub } from "react-icons/ai";
-import { Tooltip } from "@app/components/tooltip";
 import { SelctTheme } from "./select-theme";
-import { UserProfile } from "./user-profile";
 
 export const Header = (): JSX.Element => {
   const iconBaseClass =
@@ -15,14 +10,15 @@ export const Header = (): JSX.Element => {
       <section>
         <Link
           to="/"
-          className="flex cursor-pointer items-center rounded px-3 py-2 text-font hover:bg-background-brand-subtlest hover:text-font-brand"
+          className="flex cursor-pointer items-center gap-12 rounded px-3 py-2 text-font hover:bg-background-brand-subtlest hover:text-font-brand"
         >
-          <img src="/images/logo.png" width={24} height={24} alt="Logo" />
-          <span className="ml-2">Jira Clone</span>
+          <img src="/SVGs/Emblem_of_India.png" width={30} height={20} alt="Logo" />
+          <span className="ml-2">Task Management System</span>
         </Link>
       </section>
       <section className="flex items-center gap-4">
-        <Tooltip title="About">
+      <img src="/SVGs/logo.svg" width={200} height={20} alt="Logo" />
+        {/* <Tooltip title="About">
           <button
             aria-label="About this website"
             disabled
@@ -30,8 +26,8 @@ export const Header = (): JSX.Element => {
           >
             <HiQuestionMarkCircle size={24} />
           </button>
-        </Tooltip>
-        <Tooltip title="Github">
+        </Tooltip> */}
+        {/* <Tooltip title="Github">
           <a
             href="https://github.com/daniserrano7/jira-clone"
             className={iconBaseClass}
@@ -39,9 +35,9 @@ export const Header = (): JSX.Element => {
           >
             <AiFillGithub size={24} />
           </a>
-        </Tooltip>
+        </Tooltip> */}
         <SelctTheme />
-        <UserProfile />
+
       </section>
     </header>
   );

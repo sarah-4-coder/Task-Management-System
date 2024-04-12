@@ -81,29 +81,13 @@ const navItems: NavItemProps[] = [
   {
     href: "board",
     icon: <HiOutlineViewBoards size={24} />,
-    name: "Board",
+    name: "Tasks",
   },
   {
     href: "analytics",
     icon: <ImStatsDots size={20} />,
     name: "Analytics",
-  },
-  {
-    href: "backlog",
-    icon: <BsListNested size={24} />,
-    name: "Backlog",
-    disabled: true,
-  },
-  {
-    href: "server-error",
-    icon: <BsCloudSlash size={24} />,
-    name: "Server error",
-  },
-  {
-    href: "not-found",
-    icon: <TbError404 size={24} />,
-    name: "Not found",
-  },
+  }
 ];
 
 const NavItem = ({ href, icon, name, disabled }: NavItemProps): JSX.Element => {

@@ -21,7 +21,7 @@ export const BoardView = ({ project }: Props): JSX.Element => {
         <section className="flex items-center">
           <Search />
           <div className="mx-4 my-0 inline">
-            <UserAvatarList users={project.users} />
+            {/* <UserAvatarList users={project.users} /> */}
           </div>
           <div className="inline">
             <SelectSort />
